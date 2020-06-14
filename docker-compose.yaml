@@ -6,7 +6,8 @@ services:
     labels:
       shipyard.route: '/'
     build: 'frontend'
-    stdin_open: true  # Need this line to avoid an error on startup
+    environment:
+      CI: 'true'
     volumes:
       - './frontend/src:/srv/src'
     ports:
