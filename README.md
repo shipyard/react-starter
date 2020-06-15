@@ -1,6 +1,6 @@
 # React Compose
 
-A starter project which contains a fresh `create-react-app` project, ready with
+A starter project which contains a fresh `create-react-app` project, ready to
 run with Docker Compose and a Makefile.
 
 ## Requirements
