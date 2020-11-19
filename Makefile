@@ -1,6 +1,4 @@
-PROJECT_NAME=$(shell basename $(PWD))
-
-dev: clean build run
+develop: clean build run
 
 build:
 	docker-compose build
@@ -11,3 +9,7 @@ clean:
 
 run:
 	docker-compose up
+
+shell:
+	docker-compose run react \
+		sh
