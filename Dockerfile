@@ -1,19 +1,17 @@
-# Docker Image which is used as foundation to create
-# a custom Docker Image with this Dockerfile
+# The base Docker image which is used as a foundation
 FROM node:12-alpine
 
-# A directory within the virtualized Docker environment
-# Becomes more relevant when using Docker Compose later
+# The default working directory for the image
 WORKDIR /app
 
-# Copies package.json and package-lock.json to Docker environment
+# Copy the package.json and package-lock.json into the image
 COPY package*.json ./
 
-# Installs all node packages
+# Install node dependencies
 RUN npm install
 
 # Copies everything over to Docker environment
 COPY . .
 
-# Finally runs the application
-CMD [ "npm", "start" ]
+# The default command to use when running this image
+CMD ["npm", "start"]

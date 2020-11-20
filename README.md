@@ -1,6 +1,7 @@
 # The React Template &middot; [![Version Badge](https://img.shields.io/badge/version-1.0.0-brightgreen)](#)
 
-A basic React starter project to get started with Docker Compose and Shipyard.
+An React starter project that works with [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/),
+and [Shipyard](https://shipyard.build) out of the box.
 
 ## Includes
 
